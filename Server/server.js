@@ -1,10 +1,17 @@
 var express = require('express');
-var mongoose = require('mongoose');
+var path = require('path');
+// var mongoose = require('mongoose');
 
-var app = express;
+var app = express();
 
-mongoose.connect('mongodb://localhost/art-gallery');
+// mongoose.connect('mongodb://localhost/art-gallery');
 
-app.listen(8000);
+app.get('/', function(req, res) {
+  res.sendFile(path.join(__dirname + '/../client/index.html'));
+});
+
+app.listen(8000, function () {
+  console.log('listening on port 8000');
+});
 
 module.exports = app;
