@@ -7,7 +7,7 @@ var app = express();
 // mongoose.connect('mongodb://localhost/art-gallery');
 
 app.get('/', function(req, res) {
-  res.sendFile(path.join(__dirname + '/../client/index.html'));
+  res.sendFile(path.join(__dirname + '/client/index.html'));
 });
 
 app.listen(8000, function () {
