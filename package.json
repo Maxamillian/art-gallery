@@ -1,0 +1,19 @@
+
+{
+  "name": "art-gallery",
+  "version": "1.0.0",
+  "description": "View and keep track of your favorite art",
+  "author": "Max Berger",
+  "license": "UNLICENSED",
+  "private": false,
+  "engines": {
+    "node": ">=4.0.0"
+  },
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "express": "^4.13.4",
+    "express-partials": "^0.3.0",
+    "express-session": "^1.13.0",
+    "express-static": "^1.0.3"
+  }
+}
