@@ -1,4 +1,9 @@
 angular.module('gallery.home', [])
 .controller('HomeController', function($scope) {
-  $scope.test = 'test';
+  $scope.images = [
+    {
+      url: 'https://i.ytimg.com/vi/tntOCGkgt98/maxresdefault.jpg',
+      message: 'Kute Kitten'
+    }
+  ];
 });

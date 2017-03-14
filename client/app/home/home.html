@@ -1,4 +1,19 @@
 <div>
-  <h2>Look at all this beautiful art!</h2>
-  <p>{{ test }}</p>
+
+  <nav class="navigation">
+    <ul>
+      <li><a href="/#/home"></a>Home</li>
+    </ul>
+  </nav>
+
 </div>
+
+<h2 class="title">Main Gallery</h2>
+
+<div class="image" ng-repeat="image in images">
+  <img src="{{ image.url }}" alt="">
+  <span>{{ image.message }}</span>
+</div>
+
+
+<pre>{{ images }}</pre>
