@@ -2,10 +2,10 @@ angular.module('gallery', [
   'gallery.home',
   'ngRoute'
 ])
-.config(function ($routeProvider, $httpProvider) {
+.config(function ($routeProvider) {
   $routeProvider
     .when('/home', {
-      templateUrl: 'client/home/home.html',
+      templateUrl: 'app/home/home.html',
       controller: 'HomeController'
     })
     .otherwise({
