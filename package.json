@@ -19,5 +19,15 @@
   },
   "scripts": {
     "start": "node server.js"
-  }
+  },
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maxamillian/art-gallery.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Maxamillian/art-gallery/issues"
+  },
+  "homepage": "https://github.com/Maxamillian/art-gallery#readme"
 }
