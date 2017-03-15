@@ -14,20 +14,24 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname, '../client/index.html'));
 });
 
-app.get('/api/posts/', function(req, res) {
-  console.log();
-
+app.get('/api/posts/', function(req, res, next) {
+  homeModel.find(function(err, posts) {
+    if (err) {
+      console.error('error:', err);
+    } else {
+      res.send(posts);
+    }
+  });
 });
 
-// homeModel.find(function (err, posts) {
-//   if (err) {
-//       // Note that this error doesn't mean nothing was found,
-//       // it means the database had an error while searching, hence the 500 status
-//     res.status(500).send(err);
-//   } else {
-//       // send the list of all posts
-//     res.send(posts);
-//   }
+// app.get('/api/leaders', function(req, res, next) {
+//   Leader.find(function (err, leaders) {
+//     if (err) {
+//       console.log('error trying to get data from db');
+//     } else {
+//       res.send(leaders);
+//     }
+//   });
 // });
 
 app.post('/api/posts/', function(req, res, next) {

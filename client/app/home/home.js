@@ -19,16 +19,14 @@ angular.module('gallery.home', [])
   //   }
   // ];
 
-  $scope.images = [];
 
   $scope.getImages = function() {
-    $scope.images = Images.getAll();
-      // .then(function(images) {
-      //   $scope.images = images;
-      // });
+    Images.getAll()
+      .then(function(images) {
+        $scope.images = images;
+      });
   };
   $scope.getImages();
-
 });
 
 
