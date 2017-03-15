@@ -24,16 +24,6 @@ app.get('/api/posts/', function(req, res, next) {
   });
 });
 
-// app.get('/api/leaders', function(req, res, next) {
-//   Leader.find(function (err, leaders) {
-//     if (err) {
-//       console.log('error trying to get data from db');
-//     } else {
-//       res.send(leaders);
-//     }
-//   });
-// });
-
 app.post('/api/posts/', function(req, res, next) {
   console.log('trying to post on server side');
   var imageUrl = req.body.url;

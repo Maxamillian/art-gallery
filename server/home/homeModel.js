@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.connect('mongodb://localhost/art-gallery');
+mongoose.connect(process.env.PORT || 'mongodb://localhost/art-gallery');
 
 var db = mongoose.connection;
 db.on('open', function() {
