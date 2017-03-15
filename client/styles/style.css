@@ -4,15 +4,19 @@ body {
   font-family: arial, sans-serif;
 }
 h1, h2, ul {
-  padding: 5px;
+  padding-left: 20px;
   color: #4682B4;
 }
 li {
   color: #4682B4;
   text-decoration: none;
+  cursor: default;
 }
 li:hover {
-  color: #213e56;
+  color: #405567;
+}
+a {
+  text-decoration: none;
 }
 
 .navigation {
@@ -26,9 +30,8 @@ li:hover {
 }
 .navigation li {
   display: inline-block;
-  margin: 0 5px;
-  vertical-align: top;
-  border-right: 1px solid #000080;
+  margin: 10px 5px;
+  border-right: 1px solid #4682B4;
   padding-right: 10px;
 }
 .navigation li:last-child {
@@ -36,22 +39,36 @@ li:hover {
   border: none;
 }
 .image {
-  background: #a9cbe7;
+  background-color: #a9cbe7;
   border-radius: 5px;
   display: inline-block;
-  margin: 22px;
+  margin: 20px;
   max-width: 100%;
 }
-.image img {
+.image:hover {
+  background-color: #4682B4;
+}
+.main {
   position: relative;
   border-radius: 10px;
   padding: 5px;
   width: 300px;
-
 }
 .image span {
   display: block;
   padding: 0 5px 5px 5px;
+}
+.post {
+  margin-left: 20px;
+  background-color: #efe;
+  padding: 2px;
+  border: 1px solid #4682B4;
+  border-radius: 3px;
+}
+.heart {
+  background-image: 'heart.png';
+  width: 10px;
+  height: 10px;
 }
 
 

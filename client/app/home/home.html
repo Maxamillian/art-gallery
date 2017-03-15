@@ -1,19 +1,18 @@
-<div>
-
-  <nav class="navigation">
-    <ul>
-      <li><a href="/#/home"></a>Home</li>
-    </ul>
-  </nav>
-
-</div>
+<nav class="navigation">
+  <ul>
+    <li><a href="/#/home">Home</a></li>
+    <li><a href="/#/favorites">Favorites</a></li>
+  </ul>
+</nav>
 
 <h2>Main Gallery</h2>
 
 <div class="image" ng-repeat="image in images">
-  <img src="{{ image.url }}" alt="">
+  <img class="main" src="{{ image.url }}" alt="">
   <span>{{ image.message }}</span>
+  <span>Likes: {{ image.likes }}</span>
 </div>
 
-
-<pre>{{ images }}</pre>
+<div>
+  <a class="post" href="/#/post">Post your image</a>
+</div>

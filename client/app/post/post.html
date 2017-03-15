@@ -1,0 +1,14 @@
+<nav class="navigation">
+  <ul>
+    <li><a href="/#/home">Home</a></li>
+    <li><a href="/#/favorites">Favorites</a></li>
+  </ul>
+</nav>
+
+<h2>Submit your photo</h2>
+
+<form name="imagePost" ng-submit="addImage()">
+  <input type="url" required="true" placeholder="url here" ng-model="post.url">
+  <input type="text" placeholder="message" ng-model="post.message">
+  <button>Submit</button>
+</form>

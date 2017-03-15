@@ -19,9 +19,9 @@
     "path": "^0.12.7"
   },
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon server/server.js"
   },
-  "main": "server.js",
+  "main": "server/server.js",
   "devDependencies": {},
   "repository": {
     "type": "git",
